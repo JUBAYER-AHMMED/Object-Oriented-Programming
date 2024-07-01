@@ -1,9 +1,10 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-
-// Function of Pascal's Triangle
-void PascalsTriangle(int n) {
+class Pattern{
+    public:
+    // Function of Pascal's Triangle
+    void PascalsTriangle(int n) {
     int arr[n][n];
 
     //for space
@@ -27,12 +28,16 @@ void PascalsTriangle(int n) {
         cout << endl;
     }
 }
+};
 
 int main() {
     int n;
     // Number of lines
     cout<<"How many lines there are in your Pascal's triangle ?"<<endl;
     cin>>n;
-    PascalsTriangle(n);
+
+    Pattern obj;
+
+    obj.PascalsTriangle(n);
     return 0;
 }
